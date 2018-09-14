@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(message){\r\n\talert(message);\r\n});\n\n//# sourceURL=webpack:///./src/Notification.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction announce(message){\r\n\talert(message);\r\n}\r\n\r\nfunction log(message){\r\n\tconsole.log(message);\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n\tannounce: announce,\r\n\tlog: log\r\n});\n\n//# sourceURL=webpack:///./src/Notification.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\n\r\n\r\nObject(_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('Hello World!');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\n//const notify = require('./Notification');\r\n\r\n\r\n\r\n_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].announce('Hello World.');\r\n\r\n//require('./main.css');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

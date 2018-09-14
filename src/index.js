@@ -1,3 +1,7 @@
-import notify from './Notification';
+//const notify = require('./Notification');
 
-notify('Hello World!');
+import notification from './Notification';
+
+notification.announce('Hello World.');
+
+//require('./main.css');
